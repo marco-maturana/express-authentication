@@ -1,0 +1,11 @@
+{
+  "name": "express-authentication",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:marco-maturana/express-authentication.git",
+  "author": "Marco Aurelio Maturana Silveira <marco.maturana.ro@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  }
+}
