@@ -549,6 +549,10 @@ has@^1.0.3:
   dependencies:
     function-bind "^1.1.1"
 
+helmet@^5.1.0:
+  version "5.1.0"
+  resolved "https://npm.goodeggs.com/helmet/-/helmet-5.1.0.tgz#e98a5d4bf89ab8119c856018a3bcc82addadcd47"
+
 http-cache-semantics@^4.0.0:
   version "4.1.0"
   resolved "https://npm.goodeggs.com/http-cache-semantics/-/http-cache-semantics-4.1.0.tgz#49e91c5cbf36c9b94bcfcd71c23d5249ec74e390"
