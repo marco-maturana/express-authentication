@@ -1,17 +1,6 @@
-import cors from 'cors';
-import express, { Express, Request, Response } from 'express';
-import helmet from 'helmet';
+import Server from './config/server';
 
-const app: Express = express();
-const port = 3000;
+const server = new Server();
 
-app.use(cors());
-app.use(helmet());
-
-app.get('/', (req: Request, res: Response) => {
-  res.json({message: 'Hello World'});
-});
-
-app.listen(port, () => {
-  console.log(`⚡️[server]: Server is running at https://localhost:${port}`);
-});
+server.config({port: 3000});
+server.start();
