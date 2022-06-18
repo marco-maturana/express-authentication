@@ -1,10 +1,10 @@
 /* eslint-disable import/extensions */
 import express from 'express';
 
-import { findAll } from './controllers/user';
+import { signUp } from './controllers/user';
 
 const router = express.Router();
 
-router.get('/users', async (req, res) => findAll(req, res));
+router.post('/sign-up', async (req, res) => signUp(req, res));
 
 export default router;

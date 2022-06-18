@@ -21,6 +21,8 @@ export default class Server {
 
     this.server.use(cors());
     this.server.use(helmet());
+    this.server.use(express.json())
+    this.server.use(express.urlencoded({ extended: true }))
 
     this.server.get('/', (_req: Request, res: Response) => {
       res.json({message: 'Hello World'});
