@@ -1,6 +1,14 @@
+import database from './config/database';
 import Server from './config/server';
 
-const server = new Server();
+async function main() {
 
-server.config({port: 3000});
-server.start();
+  await database('mongodb://localhost:27017/express-authentication');
+
+  const server = new Server();
+
+  server.config({port: 3000);
+  server.start();
+}
+
+main().catch(err => console.log(err));

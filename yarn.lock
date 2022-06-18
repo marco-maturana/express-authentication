@@ -106,6 +106,17 @@
     "@types/mime" "^1"
     "@types/node" "*"
 
+"@types/webidl-conversions@*":
+  version "6.1.1"
+  resolved "https://npm.goodeggs.com/@types%2fwebidl-conversions/-/webidl-conversions-6.1.1.tgz#e33bc8ea812a01f63f90481c666334844b12a09e"
+
+"@types/whatwg-url@^8.2.1":
+  version "8.2.1"
+  resolved "https://npm.goodeggs.com/@types%2fwhatwg-url/-/whatwg-url-8.2.1.tgz#f1aac222dab7c59e011663a0cb0a3117b2ef05d4"
+  dependencies:
+    "@types/node" "*"
+    "@types/webidl-conversions" "*"
+
 abbrev@1:
   version "1.1.1"
   resolved "https://npm.goodeggs.com/abbrev/-/abbrev-1.1.1.tgz#f8f2c887ad10bf67f634f005b6987fed3179aac8"
@@ -160,6 +171,10 @@ balanced-match@^1.0.0:
   version "1.0.2"
   resolved "https://npm.goodeggs.com/balanced-match/-/balanced-match-1.0.2.tgz#e83e3a7e3f300b34cb9d87f615fa0cbf357690ee"
 
+base64-js@^1.3.1:
+  version "1.5.1"
+  resolved "https://npm.goodeggs.com/base64-js/-/base64-js-1.5.1.tgz#1b1b440160a5bf7ad40b650f095963481903930a"
+
 binary-extensions@^2.0.0:
   version "2.2.0"
   resolved "https://npm.goodeggs.com/binary-extensions/-/binary-extensions-2.2.0.tgz#75f502eeaf9ffde42fc98829645be4ea76bd9e2d"
@@ -206,6 +221,19 @@ braces@~3.0.2:
   resolved "https://npm.goodeggs.com/braces/-/braces-3.0.2.tgz#3454e1a462ee8d599e236df336cd9ea4f8afe107"
   dependencies:
     fill-range "^7.0.1"
+
+bson@^4.6.2, bson@^4.6.3:
+  version "4.6.4"
+  resolved "https://npm.goodeggs.com/bson/-/bson-4.6.4.tgz#e66d4a334f1ab230dfcfb9ec4ea9091476dd372e"
+  dependencies:
+    buffer "^5.6.0"
+
+buffer@^5.6.0:
+  version "5.7.1"
+  resolved "https://npm.goodeggs.com/buffer/-/buffer-5.7.1.tgz#ba62e7c13133053582197160851a8f648e99eed0"
+  dependencies:
+    base64-js "^1.3.1"
+    ieee754 "^1.1.13"
 
 bytes@3.1.2:
   version "3.1.2"
@@ -333,6 +361,12 @@ debug@2.6.9:
   dependencies:
     ms "2.0.0"
 
+debug@4.x:
+  version "4.3.4"
+  resolved "https://npm.goodeggs.com/debug/-/debug-4.3.4.tgz#1319f6579357f2338d3337d2cdd4914bb5dcc865"
+  dependencies:
+    ms "2.1.2"
+
 debug@^3.2.7:
   version "3.2.7"
   resolved "https://npm.goodeggs.com/debug/-/debug-3.2.7.tgz#72580b7e9145fb39b6676f9c5e5fb100b934179a"
@@ -352,6 +386,10 @@ deep-extend@^0.6.0:
 defer-to-connect@^1.0.1:
   version "1.1.3"
   resolved "https://npm.goodeggs.com/defer-to-connect/-/defer-to-connect-1.1.3.tgz#331ae050c08dcf789f8c83a7b81f0ed94f4ac591"
+
+denque@^2.0.1:
+  version "2.0.1"
+  resolved "https://npm.goodeggs.com/denque/-/denque-2.0.1.tgz#bcef4c1b80dc32efe97515744f21a4229ab8934a"
 
 depd@2.0.0:
   version "2.0.0"
@@ -573,6 +611,10 @@ iconv-lite@0.4.24:
   dependencies:
     safer-buffer ">= 2.1.2 < 3"
 
+ieee754@^1.1.13:
+  version "1.2.1"
+  resolved "https://npm.goodeggs.com/ieee754/-/ieee754-1.2.1.tgz#8eb7a10a63fff25d15a57b001586d177d1b0d352"
+
 ignore-by-default@^1.0.1:
   version "1.0.1"
   resolved "https://npm.goodeggs.com/ignore-by-default/-/ignore-by-default-1.0.1.tgz#48ca6d72f6c6a3af00a9ad4ae6876be3889e2b09"
@@ -596,6 +638,10 @@ ini@2.0.0:
 ini@~1.3.0:
   version "1.3.8"
   resolved "https://npm.goodeggs.com/ini/-/ini-1.3.8.tgz#a29da425b48806f34767a4efce397269af28432c"
+
+ip@^1.1.5:
+  version "1.1.8"
+  resolved "https://npm.goodeggs.com/ip/-/ip-1.1.8.tgz#ae05948f6b075435ed3307acce04629da8cdbf48"
 
 ipaddr.js@1.9.1:
   version "1.9.1"
@@ -662,6 +708,10 @@ json-buffer@3.0.0:
   version "3.0.0"
   resolved "https://npm.goodeggs.com/json-buffer/-/json-buffer-3.0.0.tgz#5b1f397afc75d677bde8bcfc0e47e1f9a3d9a898"
 
+kareem@2.4.1:
+  version "2.4.1"
+  resolved "https://npm.goodeggs.com/kareem/-/kareem-2.4.1.tgz#7d81ec518204a48c1cb16554af126806c3cd82b0"
+
 keyv@^3.0.0:
   version "3.1.0"
   resolved "https://npm.goodeggs.com/keyv/-/keyv-3.1.0.tgz#ecc228486f69991e49e9476485a5be1e8fc5c4d9"
@@ -702,6 +752,10 @@ media-typer@0.3.0:
   version "0.3.0"
   resolved "https://npm.goodeggs.com/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
 
+memory-pager@^1.0.2:
+  version "1.5.0"
+  resolved "https://npm.goodeggs.com/memory-pager/-/memory-pager-1.5.0.tgz#d8751655d22d384682741c972f2c3d6dfa3e66b5"
+
 merge-descriptors@1.0.1:
   version "1.0.1"
   resolved "https://npm.goodeggs.com/merge-descriptors/-/merge-descriptors-1.0.1.tgz#b00aaa556dd8b44568150ec9d1b953f3f90cbb61"
@@ -738,9 +792,53 @@ minimist@^1.2.0:
   version "1.2.6"
   resolved "https://npm.goodeggs.com/minimist/-/minimist-1.2.6.tgz#8637a5b759ea0d6e98702cfb3a9283323c93af44"
 
+mongodb-connection-string-url@^2.5.2:
+  version "2.5.2"
+  resolved "https://npm.goodeggs.com/mongodb-connection-string-url/-/mongodb-connection-string-url-2.5.2.tgz#f075c8d529e8d3916386018b8a396aed4f16e5ed"
+  dependencies:
+    "@types/whatwg-url" "^8.2.1"
+    whatwg-url "^11.0.0"
+
+mongodb@4.7.0:
+  version "4.7.0"
+  resolved "https://npm.goodeggs.com/mongodb/-/mongodb-4.7.0.tgz#99f7323271d93659067695b60e7b4efee2de9bf0"
+  dependencies:
+    bson "^4.6.3"
+    denque "^2.0.1"
+    mongodb-connection-string-url "^2.5.2"
+    socks "^2.6.2"
+  optionalDependencies:
+    saslprep "^1.0.3"
+
+mongoose@^6.4.0:
+  version "6.4.0"
+  resolved "https://npm.goodeggs.com/mongoose/-/mongoose-6.4.0.tgz#22d6ab436bdf444b833e92faaa53e47b734c15c6"
+  dependencies:
+    bson "^4.6.2"
+    kareem "2.4.1"
+    mongodb "4.7.0"
+    mpath "0.9.0"
+    mquery "4.0.3"
+    ms "2.1.3"
+    sift "16.0.0"
+
+mpath@0.9.0:
+  version "0.9.0"
+  resolved "https://npm.goodeggs.com/mpath/-/mpath-0.9.0.tgz#0c122fe107846e31fc58c75b09c35514b3871904"
+
+mquery@4.0.3:
+  version "4.0.3"
+  resolved "https://npm.goodeggs.com/mquery/-/mquery-4.0.3.tgz#4d15f938e6247d773a942c912d9748bd1965f89d"
+  dependencies:
+    debug "4.x"
+
 ms@2.0.0:
   version "2.0.0"
   resolved "https://npm.goodeggs.com/ms/-/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"
+
+ms@2.1.2:
+  version "2.1.2"
+  resolved "https://npm.goodeggs.com/ms/-/ms-2.1.2.tgz#d09d1f357b443f493382a8eb3ccd183872ae6009"
 
 ms@2.1.3, ms@^2.1.1:
   version "2.1.3"
@@ -846,6 +944,10 @@ pump@^3.0.0:
     end-of-stream "^1.1.0"
     once "^1.3.1"
 
+punycode@^2.1.1:
+  version "2.1.1"
+  resolved "https://npm.goodeggs.com/punycode/-/punycode-2.1.1.tgz#b58b010ac40c22c5657616c8d2c2c02c7bf479ec"
+
 pupa@^2.1.1:
   version "2.1.1"
   resolved "https://npm.goodeggs.com/pupa/-/pupa-2.1.1.tgz#f5e8fd4afc2c5d97828faa523549ed8744a20d62"
@@ -912,6 +1014,12 @@ safe-buffer@5.2.1:
   version "2.1.2"
   resolved "https://npm.goodeggs.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
 
+saslprep@^1.0.3:
+  version "1.0.3"
+  resolved "https://npm.goodeggs.com/saslprep/-/saslprep-1.0.3.tgz#4c02f946b56cf54297e347ba1093e7acac4cf226"
+  dependencies:
+    sparse-bitfield "^3.0.3"
+
 semver-diff@^3.1.1:
   version "3.1.1"
   resolved "https://npm.goodeggs.com/semver-diff/-/semver-diff-3.1.1.tgz#05f77ce59f325e00e2706afd67bb506ddb1ca32b"
@@ -971,9 +1079,30 @@ side-channel@^1.0.4:
     get-intrinsic "^1.0.2"
     object-inspect "^1.9.0"
 
+sift@16.0.0:
+  version "16.0.0"
+  resolved "https://npm.goodeggs.com/sift/-/sift-16.0.0.tgz#447991577db61f1a8fab727a8a98a6db57a23eb8"
+
 signal-exit@^3.0.2:
   version "3.0.7"
   resolved "https://npm.goodeggs.com/signal-exit/-/signal-exit-3.0.7.tgz#a9a1767f8af84155114eaabd73f99273c8f59ad9"
+
+smart-buffer@^4.2.0:
+  version "4.2.0"
+  resolved "https://npm.goodeggs.com/smart-buffer/-/smart-buffer-4.2.0.tgz#6e1d71fa4f18c05f7d0ff216dd16a481d0e8d9ae"
+
+socks@^2.6.2:
+  version "2.6.2"
+  resolved "https://npm.goodeggs.com/socks/-/socks-2.6.2.tgz#ec042d7960073d40d94268ff3bb727dc685f111a"
+  dependencies:
+    ip "^1.1.5"
+    smart-buffer "^4.2.0"
+
+sparse-bitfield@^3.0.3:
+  version "3.0.3"
+  resolved "https://npm.goodeggs.com/sparse-bitfield/-/sparse-bitfield-3.0.3.tgz#ff4ae6e68656056ba4b3e792ab3334d38273ca11"
+  dependencies:
+    memory-pager "^1.0.2"
 
 statuses@2.0.1:
   version "2.0.1"
@@ -1028,6 +1157,12 @@ touch@^3.1.0:
   resolved "https://npm.goodeggs.com/touch/-/touch-3.1.0.tgz#fe365f5f75ec9ed4e56825e0bb76d24ab74af83b"
   dependencies:
     nopt "~1.0.10"
+
+tr46@^3.0.0:
+  version "3.0.0"
+  resolved "https://npm.goodeggs.com/tr46/-/tr46-3.0.0.tgz#555c4e297a950617e8eeddef633c87d4d9d6cbf9"
+  dependencies:
+    punycode "^2.1.1"
 
 ts-node@^10.8.1:
   version "10.8.1"
@@ -1118,6 +1253,17 @@ v8-compile-cache-lib@^3.0.1:
 vary@^1, vary@~1.1.2:
   version "1.1.2"
   resolved "https://npm.goodeggs.com/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
+
+webidl-conversions@^7.0.0:
+  version "7.0.0"
+  resolved "https://npm.goodeggs.com/webidl-conversions/-/webidl-conversions-7.0.0.tgz#256b4e1882be7debbf01d05f0aa2039778ea080a"
+
+whatwg-url@^11.0.0:
+  version "11.0.0"
+  resolved "https://npm.goodeggs.com/whatwg-url/-/whatwg-url-11.0.0.tgz#0a849eebb5faf2119b901bb76fd795c2848d4018"
+  dependencies:
+    tr46 "^3.0.0"
+    webidl-conversions "^7.0.0"
 
 widest-line@^3.1.0:
   version "3.1.0"
