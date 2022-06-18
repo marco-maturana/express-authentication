@@ -1,9 +1,10 @@
 import cors from 'cors';
-import express, { Express, Request, Response } from 'express';
+import express, { Express, Request, Response, Router } from 'express';
 import helmet from 'helmet';
 
 export interface ServerOptions {
   port: number;
+  apiRouter: Router;
 }
 
 export default class Server {
@@ -16,6 +17,7 @@ export default class Server {
 
   config(options: Readonly<ServerOptions>) {
     this.options = options;
+    const {apiRouter} = options;
 
     this.server.use(cors());
     this.server.use(helmet());
@@ -23,6 +25,8 @@ export default class Server {
     this.server.get('/', (_req: Request, res: Response) => {
       res.json({message: 'Hello World'});
     });
+
+    this.server.use('/api', apiRouter);
   }
 
   start() {

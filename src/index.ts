@@ -1,4 +1,5 @@
 import database from './config/database';
+import router from './router';
 import Server from './config/server';
 
 async function main() {
@@ -7,7 +8,7 @@ async function main() {
 
   const server = new Server();
 
-  server.config({port: 3000);
+  server.config({port: 3000, apiRouter: router});
   server.start();
 }
 
