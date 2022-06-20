@@ -92,7 +92,7 @@
     "@types/qs" "*"
     "@types/range-parser" "*"
 
-"@types/express@^4.17.13":
+"@types/express@*", "@types/express@^4.17.13":
   version "4.17.13"
   resolved "https://npm.goodeggs.com/@types%2fexpress/-/express-4.17.13.tgz#a76e2995728999bab51a33fabce1d705a3709034"
   dependencies:
@@ -101,7 +101,7 @@
     "@types/qs" "*"
     "@types/serve-static" "*"
 
-"@types/jsonwebtoken@^8.5.8":
+"@types/jsonwebtoken@*", "@types/jsonwebtoken@^8.5.8":
   version "8.5.8"
   resolved "https://npm.goodeggs.com/@types%2fjsonwebtoken/-/jsonwebtoken-8.5.8.tgz#01b39711eb844777b7af1d1f2b4cf22fda1c0c44"
   dependencies:
@@ -114,6 +114,27 @@
 "@types/node@*", "@types/node@^18.0.0":
   version "18.0.0"
   resolved "https://npm.goodeggs.com/@types%2fnode/-/node-18.0.0.tgz#67c7b724e1bcdd7a8821ce0d5ee184d3b4dd525a"
+
+"@types/passport-jwt@^3.0.6":
+  version "3.0.6"
+  resolved "https://npm.goodeggs.com/@types%2fpassport-jwt/-/passport-jwt-3.0.6.tgz#41cc8b5803d5f5f06eb33e19c453b42716def4f1"
+  dependencies:
+    "@types/express" "*"
+    "@types/jsonwebtoken" "*"
+    "@types/passport-strategy" "*"
+
+"@types/passport-strategy@*":
+  version "0.2.35"
+  resolved "https://npm.goodeggs.com/@types%2fpassport-strategy/-/passport-strategy-0.2.35.tgz#e52f5212279ea73f02d9b06af67efe9cefce2d0c"
+  dependencies:
+    "@types/express" "*"
+    "@types/passport" "*"
+
+"@types/passport@*", "@types/passport@^1.0.9":
+  version "1.0.9"
+  resolved "https://npm.goodeggs.com/@types%2fpassport/-/passport-1.0.9.tgz#b32fa8f7485dace77a9b58e82d0c92908f6e8387"
+  dependencies:
+    "@types/express" "*"
 
 "@types/qs@*":
   version "6.9.7"
@@ -840,7 +861,7 @@ json-buffer@3.0.0:
   version "3.0.0"
   resolved "https://npm.goodeggs.com/json-buffer/-/json-buffer-3.0.0.tgz#5b1f397afc75d677bde8bcfc0e47e1f9a3d9a898"
 
-jsonwebtoken@^8.5.1:
+jsonwebtoken@^8.2.0, jsonwebtoken@^8.5.1:
   version "8.5.1"
   resolved "https://npm.goodeggs.com/jsonwebtoken/-/jsonwebtoken-8.5.1.tgz#00e71e0b8df54c2121a1f26137df2280673bcc0d"
   dependencies:
@@ -1146,6 +1167,25 @@ parseurl@~1.3.3:
   version "1.3.3"
   resolved "https://npm.goodeggs.com/parseurl/-/parseurl-1.3.3.tgz#9da19e7bee8d12dff0513ed5b76957793bc2e8d4"
 
+passport-jwt@^4.0.0:
+  version "4.0.0"
+  resolved "https://npm.goodeggs.com/passport-jwt/-/passport-jwt-4.0.0.tgz#7f0be7ba942e28b9f5d22c2ebbb8ce96ef7cf065"
+  dependencies:
+    jsonwebtoken "^8.2.0"
+    passport-strategy "^1.0.0"
+
+passport-strategy@1.x.x, passport-strategy@^1.0.0:
+  version "1.0.0"
+  resolved "https://npm.goodeggs.com/passport-strategy/-/passport-strategy-1.0.0.tgz#b5539aa8fc225a3d1ad179476ddf236b440f52e4"
+
+passport@^0.6.0:
+  version "0.6.0"
+  resolved "https://npm.goodeggs.com/passport/-/passport-0.6.0.tgz#e869579fab465b5c0b291e841e6cc95c005fac9d"
+  dependencies:
+    passport-strategy "1.x.x"
+    pause "0.0.1"
+    utils-merge "^1.0.1"
+
 path-is-absolute@^1.0.0:
   version "1.0.1"
   resolved "https://npm.goodeggs.com/path-is-absolute/-/path-is-absolute-1.0.1.tgz#174b9268735534ffbc7ace6bf53a5a9e1b5c5f5f"
@@ -1153,6 +1193,10 @@ path-is-absolute@^1.0.0:
 path-to-regexp@0.1.7:
   version "0.1.7"
   resolved "https://npm.goodeggs.com/path-to-regexp/-/path-to-regexp-0.1.7.tgz#df604178005f522f15eb4490e7247a1bfaa67f8c"
+
+pause@0.0.1:
+  version "0.0.1"
+  resolved "https://npm.goodeggs.com/pause/-/pause-0.0.1.tgz#1d408b3fdb76923b9543d96fb4c9dfd535d9cb5d"
 
 picomatch@^2.0.4, picomatch@^2.2.1:
   version "2.3.1"
@@ -1521,7 +1565,7 @@ util-deprecate@^1.0.1:
   version "1.0.2"
   resolved "https://npm.goodeggs.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
 
-utils-merge@1.0.1:
+utils-merge@1.0.1, utils-merge@^1.0.1:
   version "1.0.1"
   resolved "https://npm.goodeggs.com/utils-merge/-/utils-merge-1.0.1.tgz#9f95710f50a267947b2ccc124741c1028427e713"
 
