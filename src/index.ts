@@ -1,14 +1,18 @@
+import 'dotenv/config'
+
 import database from './config/database';
 import router from './router';
 import Server from './config/server';
 
 async function main() {
 
-  await database('mongodb://localhost:27017/express-authentication');
+  await database();
 
   const server = new Server();
 
-  server.config({port: 3000, apiRouter: router});
+  const port = Number(process.env.SERVER_PORT ?? '3000');
+
+  server.config({port, apiRouter: router});
   server.start();
 }
 
