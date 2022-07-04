@@ -15,6 +15,7 @@ module.exports = {
     '@typescript-eslint'
   ],
   rules: {
-    semi: ['error', 'always']
+    semi: ['error', 'always'],
+    '@typescript-eslint/consistent-type-definitions': ['error', 'interface']
   }
 };
