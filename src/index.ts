@@ -4,7 +4,7 @@ import database from './config/database';
 import router from './router';
 import Server from './config/server';
 
-async function main () {
+async function main() {
   await database();
 
   const server = new Server();
@@ -15,4 +15,4 @@ async function main () {
   server.start();
 }
 
-main().catch(err => console.log(err));
+main().catch((err) => console.log(err));

@@ -13,11 +13,11 @@ export default class Server {
   private readonly server: Express;
   private options: ServerOptions | undefined;
 
-  constructor () {
+  constructor() {
     this.server = express();
   }
 
-  config (options: Readonly<ServerOptions>) {
+  config(options: Readonly<ServerOptions>) {
     this.options = options;
     const { apiRouter } = options;
 
@@ -36,13 +36,16 @@ export default class Server {
     this.server.use('/api', apiRouter);
   }
 
-  start () {
-    if (this.options == null) throw new Error('The server needs to be configured!');
+  start() {
+    if (this.options == null)
+      throw new Error('The server needs to be configured!');
 
     const { port } = this.options;
 
     this.server.listen(port, () => {
-      console.log(`⚡️[server]: Server is running at https://localhost:${port}`);
+      console.log(
+        `⚡️[server]: Server is running at https://localhost:${port}`
+      );
     });
   }
 }
